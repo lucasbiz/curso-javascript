@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta com Script</title>
+</head>
+<body>
+    <h1>Pergunta com JS</h1>
+    <div>
+        <label for="iquest">De qual país você é natural?</label>
+        <input type="text" name="quest" id="iquest">
+        <input type="button" value="Checar" onclick="checar()">
+    </div>
+    <div id="resultado">
+    <script>
+        function checar(){
+            var resultado = document.getElementById('resultado')
+            var quest = document.querySelector('input#iquest').value
+            if(quest == 'Brasil'){
+                resultado.innerHTML = 'Se você veio do Brasil então você é brasileiro, seu burro'
+            }
+            else{
+                resultado.innerHTML = `Pelo visto você veio do(a) ${quest}, você é estrangeiro ou não sabe escrever o nome do seu país`
+            }
+        }
+    </script>
+    
+</body>
+</html>
