@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background: rgb(107, 107, 241);
+    background: rgb(31, 5, 37);
     font: normal 15pt arial;
 }
 header{
@@ -25,7 +25,7 @@ footer{
 
 a{
     text-decoration: none;
-    color: rgb(71, 13, 104);
+    color: rgb(155, 49, 216);
 
 }
 
@@ -58,6 +58,15 @@ div.itens{
     padding: 20px;
 }
 
-div#button > input{
-    width: 50px;
+div#botao{
+    padding: 20px 0px 20px 20px;
+}
+
+input#botao{
+    width: 100px;
+    
+}
+
+div#res{
+    padding: 20px;
 }
