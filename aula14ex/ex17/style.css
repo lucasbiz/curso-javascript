@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 body{
-    background: rgb(107, 107, 241);
+    background-image: linear-gradient(to bottom, rgb(126, 37, 126), rgb(0, 162, 255));
+    background-attachment: fixed;
     font: normal 15pt arial;
 }
 header{
@@ -25,7 +26,7 @@ footer{
 
 a{
     text-decoration: none;
-    color: rgb(155, 49, 216);
+    color: rgb(216, 149, 49);
 
 }
 
@@ -53,4 +54,8 @@ p#redes > a{
 p#redes > a:hover >img {
         transform: translate(3px, -3px);
         transition: 0.3s;
+}
+
+div#sel{
+    padding: 20px;
 }
