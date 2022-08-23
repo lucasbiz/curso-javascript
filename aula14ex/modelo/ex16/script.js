@@ -8,7 +8,7 @@ function contagem(){
     
     if (ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0){window.alert('[ERRO] Todos os campos devem ser preenchidos!')} else if (pas.value <= 0){window.alert('[ERRO]O valor de passos não pode ser 0 ou negativo!')} else{
 
-        res.innerHTML = 'Contando: '
+        res.innerHTML = 'Contando: <br>'
         var i = Number(ini.value)
         var f = Number(fim.value)
         var p = Number(pas.value)
