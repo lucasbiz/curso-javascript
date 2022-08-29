@@ -1,0 +1,12 @@
+div.normal >img {
+    transition: 1s;
+}
+
+div.rotated > img{
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+div#gato{
+    padding: 10px;
+}
