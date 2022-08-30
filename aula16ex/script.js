@@ -1,6 +1,7 @@
 let num = document.getElementById('inum')
 let res = document.getElementById('resultado')
 let lista = []
+let selec = document.getElementById('seladd')
 
 
 function adicionar(){
