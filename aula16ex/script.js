@@ -24,14 +24,47 @@ function adicionar(){
 }
 
 function finalizar(){
+
     res.innerHTML = ''
+
     if (num.value.length == 0){alert('[ERRO] É necessário adicionar ao menos um número!')
+    
     }else {
+
         let tam = Number(lista.length)
-        let result = document.createElement('p')
+        let itens = document.createElement('p')
         let plural = 'números'
         if (tam == 1) {plural = 'número'}
-        result.textContent = `Você inseriu ${tam} ${plural}!`
-        res.appendChild(result)
+        itens.textContent = `Você inseriu ${tam} ${plural}!`
+        res.appendChild(itens)
+
+        let maior = document.createElement('p')
+        let ordem = lista.sort()
+        let ultimo = lista.at(tam - 1)
+        maior.textContent = `O maior valor inserido foi ${ultimo}`
+        res.appendChild(maior)
+
+        let menor = document.createElement('p')
+        let primeiro = lista.at(0)
+        menor.textContent = `O menor valor inserido foi ${primeiro}`
+        res.appendChild(menor)
+
+        let somatorio = document.createElement('p')
+        let soma = 0
+        for (c = 0; c < tam; c++){
+                soma += lista[c]
+        }
+        somatorio.textContent = `O somatório de todos os itens é ${soma}`
+        res.appendChild(somatorio)
+
+        let media = document.createElement('p')
+        let calc = soma/tam
+        media.textContent = `A média dos valores inseridos é ${calc}`
+        res.appendChild(media)
+
+        let thanks = document.createElement('p')
+        thanks.textContent = `Obrigado por utilizar! \u{1F33B}`
+        res.appendChild(thanks)
+
     }
 }
