@@ -21,13 +21,15 @@ function adicionar(){
         op.text = `Número ${numero} adicionado!`
         selec.appendChild(op)
     }
+    num.value = ''
+    num.focus()
 }
 
 function finalizar(){
 
     res.innerHTML = ''
 
-    if (num.value.length == 0){alert('[ERRO] É necessário adicionar ao menos um número!')
+    if (lista.length == 0){alert('[ERRO] É necessário adicionar ao menos um número!')
     
     }else {
 
